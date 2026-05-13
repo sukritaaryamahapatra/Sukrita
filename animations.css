@@ -1,0 +1,120 @@
+/* ═══════════════════════════════════════════════════════════════
+   SUKRITA PORTFOLIO — animations.css
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── SCROLL REVEAL ───────────────────────────────────────────── */
+.reveal,
+.reveal-delay-1,
+.reveal-delay-2,
+.reveal-delay-3 {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.reveal.visible          { opacity: 1; transform: translateY(0); }
+.reveal-delay-1.visible  { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+.reveal-delay-2.visible  { opacity: 1; transform: translateY(0); transition-delay: 0.30s; }
+.reveal-delay-3.visible  { opacity: 1; transform: translateY(0); transition-delay: 0.45s; }
+
+/* ── HERO ELEMENTS (always visible on load) ──────────────────── */
+.hero .reveal,
+.hero .reveal-delay-1,
+.hero .reveal-delay-2,
+.hero .reveal-delay-3 {
+  animation: heroFadeUp 0.9s var(--ease-out-expo) forwards;
+}
+
+.hero .reveal          { animation-delay: 0.1s; }
+.hero .reveal-delay-1  { animation-delay: 0.25s; }
+.hero .reveal-delay-2  { animation-delay: 0.4s; }
+.hero .reveal-delay-3  { animation-delay: 0.55s; }
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── SCROLL LINE ANIMATION ───────────────────────────────────── */
+@keyframes scrollLine {
+  0%   { opacity: 0; transform: scaleY(0); transform-origin: top; }
+  40%  { opacity: 1; transform: scaleY(1); transform-origin: top; }
+  60%  { opacity: 1; transform: scaleY(1); transform-origin: bottom; }
+  100% { opacity: 0; transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* ── NAV FADE IN ─────────────────────────────────────────────── */
+.nav {
+  animation: navSlideDown 0.6s ease forwards;
+}
+
+@keyframes navSlideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── SKILL TAG HOVER ─────────────────────────────────────────── */
+.skill-tag {
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.skill-tag:hover {
+  transform: translateY(-2px);
+}
+
+/* ── PROJECT CARD ────────────────────────────────────────────── */
+.project-card {
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1),
+              border-color 0.3s ease,
+              box-shadow 0.35s ease;
+}
+
+/* ── TIMELINE MARKER PULSE ───────────────────────────────────── */
+.timeline__marker {
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 1px var(--gold); }
+  50%       { box-shadow: 0 0 0 5px rgba(201,168,76,0.15), 0 0 0 1px var(--gold); }
+}
+
+/* ── BACKGROUND TEXT FLOAT ───────────────────────────────────── */
+.hero__bg-text {
+  animation: bgFloat 8s ease-in-out infinite;
+}
+
+@keyframes bgFloat {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50%       { transform: translate(-50%, -50%) translateY(-12px); }
+}
+
+/* ── BUTTON SHINE ────────────────────────────────────────────── */
+.btn--primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--primary::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: rgba(255,255,255,0.15);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.btn--primary:hover::after {
+  left: 125%;
+}
+
+/* ── STAT NUMBER COUNT UP (CSS only trigger) ─────────────────── */
+.stat__number {
+  transition: color 0.4s ease;
+}
+
+.stat:hover .stat__number {
+  color: var(--gold);
+}

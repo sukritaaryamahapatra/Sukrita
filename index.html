@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sukrita Arya Mahapatra – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAV ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">S<span class="nav__logo-dot">.</span>A Mahapatra</div>
+    <ul class="nav__links">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#experience" class="nav__link">Experience</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-text" aria-hidden="true">PORTFOLIO</div>
+
+    <div class="hero__content">
+      <div class="hero__tag reveal">WordPress Developer · Web Developer · Designer</div>
+      <h1 class="hero__name reveal-delay-1">
+        Sukrita<br /><em>Arya Mahapatra</em>
+      </h1>
+      <p class="hero__tagline reveal-delay-2">
+        Building responsive, beautiful, and purposeful web experiences
+        — from custom WordPress themes to interactive front-ends.
+      </p>
+      <div class="hero__actions reveal-delay-3">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="assets\Sukrita's CV.pdf" download class="btn btn--ghost">Download CV</a>
+      </div>
+    </div>
+
+    <div class="hero__img-wrap reveal-delay-2">
+      <div class="hero__img-frame">
+        <img src="images\profile.png" alt="Sukrita Arya Mahapatra" class="hero__img" onerror="this.style.display='none'" />
+        <div class="hero__img-placeholder">S</div>
+      </div>
+      <div class="hero__img-deco" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABOUT ═══════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">— About Me</div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <h2 class="about__heading">Dedicated to craft,<br /><em>driven by detail.</em></h2>
+          <p>
+            I'm a <strong>BCA student at Manipal University Jaipur</strong> with real-world experience building 
+            websites, managing WordPress ecosystems, and creating digital content that actually works.
+          </p>
+          <p>
+            From e-commerce stores to marriage invitation portals, I've delivered 15+ client projects —
+            always on time, always with care for the user on the other end.
+          </p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number">15<span class="stat__plus">+</span></span>
+              <span class="stat__label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">3<span class="stat__plus">+</span></span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">40<span class="stat__plus">%</span></span>
+              <span class="stat__label">Avg. Page Speed Gain</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__info reveal-delay-1">
+          <div class="info-card">
+            <div class="info-row"><span class="info-label">Location</span><span>Dhanbad, Jharkhand</span></div>
+            <div class="info-row"><span class="info-label">Email</span><a href="mailto:mahapatrasukritaarya@gmail.com">mahapatrasukritaarya@gmail.com</a></div>
+            <div class="info-row"><span class="info-label">Phone</span><a href="tel:+919709217585">+91 9709217585</a></div>
+            <div class="info-row"><span class="info-label">Education</span><span>BCA – Manipal University Jaipur</span></div>
+            <div class="info-row"><span class="info-label">Availability</span><span class="badge badge--green">Open to work</span></div>
+          </div>
+          <div class="about__socials">
+            <a href="https://www.linkedin.com/in/sukrita-arya-mahapatra-1531991b5/" target="_blank" class="social-link">LinkedIn ↗</a>
+            <a href="https://www.instagram.com/mahapatrasukrita/" target="_blank" class="social-link">Instagram ↗</a>
+            <a href="https://github.com/sukritaaryamahapatra" target="_blank" class="social-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SKILLS ═══════════════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">— Skills</div>
+      <h2 class="section-title reveal">What I work with</h2>
+
+      <div class="skills__grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Web Development & CMS</h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--primary">WordPress</span>
+            <span class="skill-tag skill-tag--primary">HTML5</span>
+            <span class="skill-tag skill-tag--primary">CSS3</span>
+            <span class="skill-tag skill-tag--primary">JavaScript (ES6+)</span>
+            <span class="skill-tag">WooCommerce</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Performance Optimization</span>
+            <span class="skill-tag">SEO On-Page</span>
+          </div>
+        </div>
+        <div class="skill-group reveal-delay-1">
+          <h3 class="skill-group__title">Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--primary">Git / GitHub</span>
+            <span class="skill-tag skill-tag--primary">VS Code</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Google Analytics</span>
+            <span class="skill-tag">Google Search Console</span>
+            <span class="skill-tag">MySQL (Basic)</span>
+          </div>
+        </div>
+        <div class="skill-group reveal-delay-2">
+          <h3 class="skill-group__title">Additional Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Copywriting</span>
+            <span class="skill-tag">Content Management</span>
+            <span class="skill-tag">Social Media Management</span>
+            <span class="skill-tag">Client Communication</span>
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">AI-Assisted Workflows</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EXPERIENCE ═══════════════════════════════════════ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">— Experience</div>
+      <h2 class="section-title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__date">Sep 2024 – Present</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">Web Developer & WordPress Specialist</h3>
+            <span class="timeline__company">ME BRAMA · Remote</span>
+            <ul class="timeline__list">
+              <li>Built and maintained 15+ WordPress sites with custom themes & WooCommerce</li>
+              <li>Designed interactive marriage invitation websites with responsive layouts</li>
+              <li>Reduced page load time by up to 40% through performance optimization</li>
+              <li>Implemented SEO: meta tags, XML sitemaps, keyword optimization</li>
+              <li>Handled security updates, bug fixes, and ongoing maintenance</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>WordPress</span><span>WooCommerce</span><span>SEO</span><span>HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__date">Dec 2025 – Present</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">Social Media Manager</h3>
+            <span class="timeline__company">Jai Sri Tradex · Remote</span>
+            <ul class="timeline__list">
+              <li>Managing multi-platform social media strategy and daily content posting</li>
+              <li>Creating visuals, captions, and campaigns using Canva</li>
+              <li>Growing brand presence and improving engagement metrics</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>Canva</span><span>Content Strategy</span><span>Brand Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__date">2023 – 2025</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">Freelance Web Developer & Graphic Designer</h3>
+            <span class="timeline__company">Self-employed</span>
+            <ul class="timeline__list">
+              <li>Built responsive websites for small businesses (HTML, CSS, JS, WordPress)</li>
+              <li>Designed marketing materials: posters, banners, presentations</li>
+              <li>Provided web design consultation and SEO guidance</li>
+              <li>Used AI-assisted workflows to boost productivity</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canva</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__date">Jun – Nov 2023</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">Digital Marketing Associate</h3>
+            <span class="timeline__company">Muskurahat Foundation</span>
+            <ul class="timeline__list">
+              <li>Managed daily social media posting and community engagement</li>
+              <li>Developed content strategies to grow followers and awareness</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>Digital Marketing</span><span>Content Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__date">Apr – Jul 2022</div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">Digital Marketing & Sales Intern</h3>
+            <span class="timeline__company">Ifortis Worldwide</span>
+            <ul class="timeline__list">
+              <li>Assisted with digital campaign planning and content creation</li>
+              <li>Supported engagement growth through organized online activities</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>Marketing</span><span>Sales</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROJECTS ═══════════════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">— Projects</div>
+      <h2 class="section-title reveal">Selected Work</h2>
+
+      <div class="projects__grid">
+
+        <div class="project-card reveal">
+          <div class="project-card__img project-card__img--1">
+            <span class="project-card__icon">🛒</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__type">E-Commerce · WordPress</span>
+            <h3 class="project-card__title">WooCommerce Store</h3>
+            <p class="project-card__desc">
+              Full-featured e-commerce websites with WooCommerce, custom product pages,
+              checkout flows, and payment gateway integration.
+            </p>
+            <div class="project-card__tags">
+              <span>WordPress</span><span>WooCommerce</span><span>PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-delay-1">
+          <div class="project-card__img project-card__img--2">
+            <span class="project-card__icon">💌</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__type">Event · WordPress</span>
+            <h3 class="project-card__title">Marriage Invitation Portals</h3>
+            <p class="project-card__desc">
+              Custom interactive wedding invitation websites with RSVP systems, guest management,
+              photo galleries, and countdown timers.
+            </p>
+            <div class="project-card__tags">
+              <span>WordPress</span><span>JavaScript</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-delay-2">
+          <div class="project-card__img project-card__img--3">
+            <span class="project-card__icon">🏢</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__type">Business · Web Dev</span>
+            <h3 class="project-card__title">Business Lead-Gen Websites</h3>
+            <p class="project-card__desc">
+              Multi-page responsive business websites with lead capture forms,
+              contact integrations, and custom post types for dynamic content.
+            </p>
+            <div class="project-card__tags">
+              <span>HTML5</span><span>CSS3</span><span>WordPress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-delay-3">
+          <div class="project-card__img project-card__img--4">
+            <span class="project-card__icon">🎨</span>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__type">Design · Branding</span>
+            <h3 class="project-card__title">Graphic Design & Branding</h3>
+            <p class="project-card__desc">
+              Creative marketing materials — posters, banners, social media kits, and
+              brand identities for small businesses and startups.
+            </p>
+            <div class="project-card__tags">
+              <span>Canva</span><span>Branding</span><span>Social Media</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EDUCATION ═══════════════════════════════════════ -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-label reveal">— Education</div>
+      <h2 class="section-title reveal">Academic Background</h2>
+      <div class="edu__grid">
+        <div class="edu__card reveal">
+          <div class="edu__year">2023 – Present</div>
+          <h3 class="edu__degree">Bachelor of Computer Applications (BCA)</h3>
+          <span class="edu__institution">Manipal University Jaipur</span>
+          <p class="edu__desc">Pursuing BCA with focus on web technologies, database management, and software development.</p>
+        </div>
+        <div class="edu__card reveal-delay-1">
+          <div class="edu__year">2020 – 2022</div>
+          <h3 class="edu__degree">Senior Secondary</h3>
+          <span class="edu__institution">NIOS</span>
+          <p class="edu__desc">Completed senior secondary education with a strong foundation in mathematics and computers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">— Contact</div>
+      <h2 class="section-title reveal">Let's build something<br /><em>together.</em></h2>
+      <p class="contact__sub reveal-delay-1">
+        Open to freelance projects, collaborations, and full-time opportunities.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <a href="mailto:mahapatrasukritaarya@gmail.com" class="contact-item">
+            <span class="contact-item__icon">✉</span>
+            <div>
+              <div class="contact-item__label">Email</div>
+              <div class="contact-item__value">mahapatrasukritaarya@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+919709217585" class="contact-item">
+            <span class="contact-item__icon">✆</span>
+            <div>
+              <div class="contact-item__label">Phone</div>
+              <div class="contact-item__value">+91 9709217585</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/sukrita-arya-mahapatra-1531991b5/" target="_blank" class="contact-item">
+            <span class="contact-item__icon">in</span>
+            <div>
+              <div class="contact-item__label">LinkedIn</div>
+              <div class="contact-item__value">linkedin.com/in/sukrita-arya-mahapatra-1531991b5</div>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact__form reveal-delay-1" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__logo">S<span>.</span>A Mahapatra</div>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/sukrita-arya-mahapatra-1531991b5/" target="_blank">LinkedIn</a>
+          <a href="https://instagram.com/mahapatrasukrita" target="_blank">Instagram</a>
+          <a href="https://github.com/sukritaaryamahapatra" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Sukrita Arya Mahapatra. All rights reserved.</span>
+        <span>Designed & Built by Sukrita</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
